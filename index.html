@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Adventures of Timmy the Tiger</title>
+<style>
+
+body {
+  background-image: url(https://lexica-serve-encoded-images2.sharif.workers.dev/md/08fb3c2f-26dd-49d3-b1fb-3367a256d23a);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page {
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.story {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+.option {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #00b8d4;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+}
+
+.option:hover {
+  background-color: #00acc1;
+}
+
+.emoji {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="page">
+  <h1 class="story">The Adventures of Timmy the Tiger</h1>
+  <p>Timmy the Tiger is a curious little tiger who loves to explore the forest. One day, he came across a babbling brook and couldn't resist the temptation to take a drink. As he leaned down to take a sip, he heard a strange noise coming from the other side of the brook.</p>
+  <div class="options">
+    <div class="option" onclick="timmySneaks()">Timmy sneaks over to see what the noise is.</div>
+    <div class="option" onclick="timmyRuns()">Timmy runs away as fast as he can.</div>
+  </div>
+</div>
+<script>
+function timmySneaks() {
+  document.querySelector(".story").innerHTML = "Timmy sneaks over to the other side of the brook and sees a group of rabbits playing. He watches them for a while, learning about their behavior and habits. After a while, he quietly returns to his side of the brook, feeling wiser and more knowledgeable about the forest.";
+  document.querySelector(".options").innerHTML = "<p class='emoji'>😊</p>";
+}
+
+function timmyRuns() {
+  document.querySelector(".story").innerHTML = "Timmy runs away as fast as he can, scared of the unknown noise. He doesn't learn anything new, but at least he's safe. After a while, he calms down and continues on his exploration of the forest.";
+  document.querySelector(".options").innerHTML = "";
+}
+</script>
+</body>
+</html>
